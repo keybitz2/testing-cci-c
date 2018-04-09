@@ -1,0 +1,9 @@
+jobs:
+  build:
+    docker:
+      - image: buildpack-deps:trusty
+    environment:
+      - FOO: "bar"
+    parallelism: 4
+    steps:
+      - run: echo "hello world from Keybitz2 org"
